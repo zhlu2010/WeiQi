@@ -21,10 +21,10 @@ public class Drawboard extends JPanel{
 			g.drawLine(i, 25, i, 925);
 		    g.drawLine(25, i, 925, i);
 		}
-		g.fillOval(215, 215, 20, 18);
-		g.fillOval(215, 715, 20, 18);
-		g.fillOval(715, 215, 20, 18);
-		g.fillOval(715, 715, 20, 18);
+		for(int i = 165; i <= 765; i +=300 ) {
+			for(int j = 165; j<=765; j+=300 )
+				g.fillOval(i, j, 18, 18);
+		}
 		
 		QiZi qizi = new QiZi();
 		int xloc, yloc;
